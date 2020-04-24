@@ -1,7 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
 	<title>Погода</title>
 </head>
 <body>
@@ -10,6 +12,7 @@
 		<p>Введите город: <input type="text" name="cityname"></p>
 		<p><input type="submit" value="send"></p>
 	</form>
-	<b>Температура:</b>{{ info.temp }}<br>
+	<h1>Test</h1>
+	<b>Температура:</b><a class="temp_class">{{ info.temp }}</a><br>
 </body>
 </html>
